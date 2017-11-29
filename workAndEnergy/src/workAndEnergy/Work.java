@@ -1,5 +1,6 @@
 package workAndEnergy;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Work {
@@ -25,9 +26,9 @@ public class Work {
 			while (true) {
 				Force = 0;
 				try {
-					System.out.println("Enter the Value for Force: ");
+					System.out.println("Enter the Value for Force: (in Newtons) ");
 					Force = scan.nextDouble();
-				} catch (Exception e) {
+				} catch (InputMismatchException e) {
 					System.out.println("You didnt use a number bro");
 					break;
 				}
