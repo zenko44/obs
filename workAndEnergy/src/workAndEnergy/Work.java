@@ -1,6 +1,5 @@
 package workAndEnergy;
 
-
 import java.util.Scanner;
 
 public class Work {
@@ -20,10 +19,9 @@ public class Work {
 		while (Work == 0) {
 
 			Scanner scan = new Scanner(System.in);
+
 			System.out.println("Enter the Value for Force: ");
 			Force = scan.nextDouble();
-
-			System.out.println("Damn you dumb");
 
 			System.out.println("Enter the Value for the Distance");
 			Distance = scan.nextDouble();
@@ -35,7 +33,7 @@ public class Work {
 				Theta = 1;
 			}
 
-			while (Theta >= 360) {
+			while (Theta > 360) {
 				System.out.println("please use and integer between 0 and 360");
 				Theta = scan.nextDouble();
 			}
