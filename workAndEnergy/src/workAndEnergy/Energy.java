@@ -7,7 +7,7 @@ public class Energy {
 	public static void energy() {
 		Scanner scan = new Scanner(System.in);
 		int choose = 0;
-		System.out.println("Do you nee to work out Potential Energy or Kinetic Energy?\r" + "Press 1 or 2 ");
+		System.out.println("Do you nee to work out Potential Energy or Kinetic Energy?\r" + "Press 1, 2  or 3");
 		while (true) {
 			try {
 				choose = scan.nextInt();
@@ -27,6 +27,12 @@ public class Energy {
 
 				return;
 			}
+			case 3:{
+				Work.main(null);
+				scan.close();
+				return;
+			}
+			
 			default: {
 				System.out.println("You didn't pick anything dumb ass");
 				break;
