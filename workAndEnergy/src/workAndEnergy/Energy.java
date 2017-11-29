@@ -26,7 +26,7 @@ public class Energy {
 				System.out.println("You didn't pick anything dumb ass");
 				break;
 			}
-
+			
 			}
 
 			scan.close();
