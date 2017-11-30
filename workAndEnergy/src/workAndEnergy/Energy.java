@@ -1,9 +1,21 @@
-package workAndEnergy;
+package workAndEnergy; 
+/* Needs to be given a reverse DNS name with all lower case
+ * ie. com.stevelacy.work_and_energy
+ * or com.stevelacy.energy
+ * the convention is to use your domain name if you have one. Mine would be
+ * uk.co.boxler.<packagename>
+ */
 
 import java.util.Scanner;
 
-public class Energy {
+/*
+ * Hey Steve, you should definitely read this. It is going to be best 
+ * to get you into good coding practices now, before they become too 
+ * ingrained again. 
+ * http://www.oracle.com/technetwork/java/codeconventions-150003.pdf
+ */
 
+public class Energy {
 	public static void energy() {
 		Scanner scan = new Scanner(System.in);
 		int choose = 0;
@@ -53,5 +65,4 @@ public class Energy {
 		energy();
 
 	}
-
 }
