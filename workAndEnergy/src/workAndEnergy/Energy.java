@@ -32,13 +32,13 @@ public class Energy {
 			}
 			switch (choose) {
 			case 1: {
-				potentialEnergy.main(null);
+				PotentialEnergy.main(null);
 				scan.close();
 
 				return;
 			}
 			case 2: {
-				kineticEnergy.main(null);
+				KineticEnergy.main(null);
 				scan.close();
 
 				return;

@@ -2,7 +2,7 @@ package workAndEnergy;
 
 import java.util.Scanner;
 
-public class work {
+public class Work {
     /*
      * work is defined by force multiply distance multiply Cos theta
      */
@@ -37,7 +37,7 @@ public class work {
 			theta = scan.nextDouble();
 			while (theta > 360) {
 				System.out.println("please use and integer between 0 and 360");
-				Theta = scan.nextDouble();
+				theta = scan.nextDouble();
 			}
 
 
@@ -45,7 +45,7 @@ public class work {
 
             work = force * distance * Math.cos(thetaRad);
 
-			System.out.println(Work + "J");
+			System.out.println(work + "J");
 			scan.close();
 		}
 
