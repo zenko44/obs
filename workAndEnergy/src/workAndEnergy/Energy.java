@@ -22,13 +22,11 @@ public class Energy {
 		System.out.println("Do you nee to work out Potential Energy or Kinetic Energy?\r"
 				+ "Press 1 for Potential energy \r2 for Kinetic energy \ror 3 for Work");
 		while (choose == 0) {
-			if(choose != 0) {
-				choose = 0;
-			}
 			try {
 				choose = scan.nextInt();
 			} catch (Exception e) {
 				System.out.println("That wasnt a numerical input.");
+				continue;
 			}
 			switch (choose) {
 			case 1: {
